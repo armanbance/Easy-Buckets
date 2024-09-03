@@ -17,4 +17,5 @@ public class DemoApplication {
 	public String hello(@RequestParam(value = "name", defaultValue = "there. General Kenobi") String name) {
 		return String.format("hello %s!", name);
 	}
+
 }
