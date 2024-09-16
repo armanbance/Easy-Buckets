@@ -12,13 +12,13 @@ import software.amazon.awssdk.services.s3.S3Client;
 @Configuration
 public class S3Config {
 
-    @Value("${aws.region}")
-    private String awsRegion;
+    // @Value("${aws.region}")
+    // private String awsRegion;
 
     @Bean
     public S3Client s3Client() {
         S3Client client = S3Client.builder()
-                .region(Region.of(awsRegion))
+                .region(Region.US_WEST_1)
                 .build();
         return client;
 
